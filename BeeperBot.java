@@ -16,7 +16,9 @@ public class BeeperBot extends Robot
     }
     
     public void findAndCountBeepers() {
-        
+        while(!nextToABeeper()){
+            move();
+        }
     }
     
     public int[] getBeeperList() {
